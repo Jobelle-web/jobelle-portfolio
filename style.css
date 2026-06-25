@@ -395,6 +395,13 @@ section{padding:120px 24px;max-width:var(--maxw);margin:0 auto;}
   .contact-inner{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
   .contact-form{padding:28px;}
+.profile-photo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
 }
 
 /* ============================
