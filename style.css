@@ -573,4 +573,21 @@ padding: 28px 24px;
 width: 100%;
 }
 }
+/* ==========================
+   Timeline Bullet Styling
+========================== */
 
+.timeline-content ul {
+    margin-top: 16px;
+    padding-left: 22px;
+}
+
+.timeline-content li {
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.timeline-content li::marker {
+    color: var(--gold);
+}
