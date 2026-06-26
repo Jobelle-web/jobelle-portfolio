@@ -422,3 +422,155 @@ section{padding:120px 24px;max-width:var(--maxw);margin:0 auto;}
    NAV SCROLLED STATE
 ============================ */
 .nav.scrolled{background:rgba(10,10,10,0.92);}
+   /* Luxury Core Expertise */
+.luxury-expertise {
+padding: 110px 7%;
+position: relative;
+}
+
+.section-sub {
+max-width: 850px;
+margin: 18px auto 0;
+color: rgba(255, 255, 255, 0.72);
+line-height: 1.8;
+text-align: center;
+}
+
+.luxury-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 26px;
+margin-top: 55px;
+}
+
+.luxury-card {
+position: relative;
+padding: 34px 30px;
+border: 1px solid rgba(212, 175, 55, 0.34);
+border-radius: 18px;
+background:
+radial-gradient(circle at top left, rgba(212, 175, 55, 0.14), transparent 35%),
+linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015));
+box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+overflow: hidden;
+transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.luxury-card::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0;
+width: 70px;
+height: 3px;
+transform: translateX(-50%);
+background: linear-gradient(90deg, transparent, #d4af37, transparent);
+opacity: 0.95;
+}
+
+.luxury-card:hover {
+transform: translateY(-8px);
+border-color: rgba(212, 175, 55, 0.75);
+box-shadow: 0 28px 80px rgba(212, 175, 55, 0.12);
+}
+
+.expertise-icon {
+width: 76px;
+height: 76px;
+border: 1px solid rgba(212, 175, 55, 0.75);
+border-radius: 50%;
+display: grid;
+place-items: center;
+margin-bottom: 22px;
+color: #d4af37;
+font-size: 30px;
+background: rgba(212, 175, 55, 0.08);
+}
+
+.luxury-card h3 {
+color: #d4af37;
+text-transform: uppercase;
+letter-spacing: 0.16em;
+font-size: 0.92rem;
+margin-bottom: 18px;
+}
+
+.luxury-card ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.luxury-card li {
+position: relative;
+padding-left: 18px;
+margin: 9px 0;
+color: rgba(255, 255, 255, 0.82);
+font-size: 0.95rem;
+line-height: 1.45;
+}
+
+.luxury-card li::before {
+content: "•";
+position: absolute;
+left: 0;
+color: #d4af37;
+}
+
+.tools-section {
+margin-top: 65px;
+}
+
+.tools-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 14px;
+margin-top: 28px;
+}
+
+.tools-grid span {
+min-width: 185px;
+justify-content: center;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 14px 18px;
+border: 1px solid rgba(212, 175, 55, 0.32);
+border-radius: 12px;
+background: linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.02));
+color: rgba(255,255,255,0.88);
+box-shadow: 0 16px 36px rgba(0,0,0,0.22);
+transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tools-grid span:hover {
+transform: translateY(-4px);
+border-color: rgba(212, 175, 55, 0.7);
+}
+
+.tools-grid i {
+color: #d4af37;
+font-size: 1.1rem;
+}
+
+@media (max-width: 1000px) {
+.luxury-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 650px) {
+.luxury-grid {
+grid-template-columns: 1fr;
+}
+
+.luxury-card {
+padding: 28px 24px;
+}
+
+.tools-grid span {
+width: 100%;
+}
+}
+
