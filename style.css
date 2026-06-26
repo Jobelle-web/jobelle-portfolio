@@ -591,3 +591,11 @@ width: 100%;
 .timeline-content li::marker {
     color: var(--gold);
 }
+   /* Force timeline bullets to match gold theme */
+.timeline-content ul li::marker {
+  color: #d4af37 !important;
+}
+
+.timeline-content ul li {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
